@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="contenedor-nav">
+        <div class="header-imagen">
+    
+        <img src="img/Logo.png" alt="Logo Recetas de Gri">
+    
+        </div>
+        
+        <div class="header-text">
+          <a href="index.html">
+            <h1>Recetas de Gri</h1>
+            <h2>-VEGANAS Y SALUDABLES-</h2>
+          </a>
+        </div>  
+    
+       
+        <nav class="header-nav">
+                <div class="redes-nav">
+                <ul>
+    
+                    <li><a href="https://www.youtube.com/channel/UCU1MvbU90zUl16HPk5J4u0w" class="youtube" target="_blank" rel="noopener noreferrer">
+                    <img src="img/youtube.png" alt="youtube"></a>
+                    </li> 
+                    <li><a href="https://www.facebook.com/pg/recetasdegri/posts/" class="facebook" target="_blank" rel="noopener noreferrer">
+                    <img src="img/facebook.png" alt="facebook"></a>
+                    </li> 
+                    <li><a href="https://www.instagram.com/recetasdegri/?hl=es" class="instagram"target="_blank" rel="noopener noreferrer">
+                    <img src="img/instagram.png" alt="instagram" ></a>
+                    </li>
+                </ul>
+        
+                <!--  Referencias de los íconos de redes sociales
+                 <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+                from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+                -->
+                </div>
+                <div class="nav-menu">
+                <ul>
+                   <li><a href="index.html">INICIO</a></li>
+                   <li><a href="recetas.html">RECETAS</a></li>
+                   <li><a href="articulos.html">ARTÍCULOS</a></li>
+                   <li><a href="lugares.html">LUGARES</a></li>
+                   <li><a href="sobre-mi.html">SOBRE MÍ</a></li>
+                </ul>
+                </div>
+               
+        </nav>
+        
+    </header>
+    <section class="sobreMi-grid">
+    <div class="imagen-contacto">
+        <img src="img/cocinando.png" alt="Cocinando">
+    </div>
+
+    <div class="sobremi-texto">
+        <p>Me encanta cocinar y aprender recetas nuevas, ricas y saludables.</p>
+        <p>Si te quieres comunicar conmigo, porfavor rellena el formulario de contacto y en breve me pondré en contacto contigo</p>
+    </div>
+    
+    
+    <div class="formulario-contacto">
+    <form action="enviar.php" method="GET" >
+
+        <fieldset class="formulario">
+            <legend> <strong> CONTACTO </strong></legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <hr>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <hr>
+            <select name="asunto" id="asunto">Asunto
+                <option value="cons">Consultas</option>
+                <option value="mar">Trabajar con una marca</option>
+            </select>
+            <hr>
+            <label for="mensaje">Mensaje</label>
+
+            <div style="margin-bottom: 10px;"></div>
+            
+            <textarea name="textarea" rows="10" cols="50" id="mensaje" required>Escribe aquí...</textarea>
+
+            <hr>
+            <input type="checkbox" name="" id="">
+            Por favor, confirme que está de acuerdo con que almacenemos sus datos.
+            <hr>
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+
+
+        </fieldset> 
+        
+        
+    
+    </form>
+    </div>
+    </section>
+    <footer class="footer">
+
+        <div class="redes">
+            <ul>
+    
+                <li><a href="https://www.youtube.com/channel/UCU1MvbU90zUl16HPk5J4u0w" class="youtube" target="_blank" rel="noopener noreferrer">
+                <img src="img/youtube.png" alt="Youtube"></a>
+                </li> 
+                <li><a href="https://www.facebook.com/pg/recetasdegri/posts/" class="facebook" target="_blank" rel="noopener noreferrer">
+                <img src="img/facebook.png" alt="Facebook"></a>
+                </li> 
+                <li><a href="https://www.instagram.com/recetasdegri/?hl=es" class="instagram" target="_blank" rel="noopener noreferrer">
+                <img src="img/instagram.png" alt="Instagram" ></a>
+                </li>
+            </ul>
+    
+            <!--  Referencias de los íconos de redes sociales
+             <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+            from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            -->
+        </div>
+    
+        
+    
+        <div class="footer-texto">
+    
+                <h1>Recetas de Gri</h1>
+                <h2>-VEGANAS Y SALUDABLES-</h2>
+                    
+        </div> 
+    
+       
+        
+    </footer>
+           
+    
+    
+</body>
+</html>

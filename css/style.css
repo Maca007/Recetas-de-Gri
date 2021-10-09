@@ -1,0 +1,1053 @@
+
+*
+{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+}
+.html{
+    font-size: 62.5%;
+}
+
+.container-index
+{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 3rem;
+    grid-template-areas: 
+    "contenedor-nav contenedor-nav contenedor-nav contenedor-nav"
+    "container-main container-main container-main container-main"
+    "footer footer footer footer"
+    ;
+    
+}
+
+.contenedor-nav
+{
+    grid-area: contenedor-nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+}
+
+
+/* se pone de color azul cuando me acerco */
+.header-text a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+.header-text a:hover{
+    color: black;
+}
+.contenedor-nav .header-text h1 
+{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;  
+}
+
+
+.contenedor-nav .header-text h2
+{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1rem;    
+}
+
+.header-nav
+{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.header-nav .nav-menu ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.header-nav .nav-menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.header-nav .nav-menu ul li
+{
+    list-style: none;
+    padding: 0 .8rem;
+}
+
+
+.header-nav .nav-menu ul li:hover
+{
+    transform: translateY(-5px) scale(1.05);
+    
+}
+
+.header-nav .redes-nav ul li
+{
+    display: inline-block;
+    margin: 0 .3rem;     
+}
+
+.header-nav .redes-nav ul li:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.header-nav .redes-nav img
+{
+    width: 3rem;
+    height: auto;
+}
+
+.container-main
+{
+    grid-area: container-main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+    column-gap: 3rem;
+    grid-template-areas: 
+    "carouselB carouselB carouselB carouselB"
+    "presentacion presentacion presentacion presentacion"
+    "video-tendencia video-tendencia video-tendencia video-tendencia"
+    
+    ;
+}
+
+.container-main .carouselB
+{
+    grid-area: carouselB;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.container-main .carouselB
+{
+    width: 60rem;
+    height: auto;
+}
+
+.container-main .presentacion
+{
+    grid-area: presentacion;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.container-main .presentacion
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+   
+}
+.container-main .presentacion .img-bio img
+{
+    margin: 3rem ;
+    width: 30rem;
+    height: auto;
+}
+
+.container-main .presentacion .text-bio
+{
+    justify-content: center;
+    align-content: center;
+    align-self: center; 
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 30rem; 
+    height: fit-content;
+    padding: 2rem;
+    margin: .5rem;
+    text-align: center;
+    
+}
+
+
+.container-main .video-tendencia
+{
+    grid-area: video-tendencia;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.container-main .video-tendencia
+{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;   
+}
+
+.container-main .texto-tendencia
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center 
+}
+.container-main .texto-tendencia .video-texto
+{
+    justify-items: center;
+    align-items: center; 
+    
+}
+
+.container-main .texto-tendencia  p
+{
+    margin-top: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;  
+    
+}
+
+.container-main .texto-tendencia  h3
+{
+    margin-top: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.6rem;
+    line-height: .6;  
+    margin-bottom: 2.5rem;
+    
+}
+
+.container-main .video-texto p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;   
+}
+
+.container-main .video-tendencia .video
+{   
+    padding: 4rem;  
+    
+}
+
+
+
+.footer
+{
+    width: 100%;
+    height: auto;
+    grid-area: footer; 
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 3rem; 
+    background: rgb(107, 179, 107) ;
+    display: flex;
+    justify-content: center;
+   
+}
+.footer .redes
+{
+    display: flex;
+    height: 5vh;
+    justify-content:center;
+    margin-top: 2rem;
+}
+
+
+.footer .redes ul li
+{
+    display: inline-block;
+    margin: 0 5px;
+
+}
+
+.footer .redes ul li:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.footer .redes img
+{
+    width: 3rem;
+    height: auto;
+}
+
+.footer .footer-texto h1 
+{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    
+}
+
+.footer .footer-texto h2 
+{
+    text-align: center;
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1rem; 
+}
+
+.footer .footer-texto a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footer-texto:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.footer .footer-links
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+   
+}
+
+.footer .footer-links a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footer-contacto:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.footer .footer-recetas:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+/*
+debo hacer las mediaqueries pero ahora me enfocare en sass
+para la entrega final @media (max-width: 600px) 
+{
+    .container-body
+    {
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "container-nav container-nav container-nav container-nav container-nav"
+    "productos productos productos productos productos"
+    "video-tendencia video-tendencia video-tendencia video-tendencia video-tendencia"
+    "presentacion presentacion presentacion presentacion presentacion"
+    "footer footer footer footer footer"
+    ;
+    }
+}
+
+@media (min-width: 768px) 
+{
+    .container-body
+    {
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "container-nav container-nav container-nav container-nav container-nav"
+    "productos productos productos productos productos"
+    "video-tendencia video-tendencia video-tendencia video-tendencia video-tendencia"
+    "presentacion presentacion presentacion presentacion presentacion"
+    "footer footer footer footer footer"
+    ;
+    }
+} */
+
+
+
+/* Ahora aplicaré estilos a recetas */
+
+/* no se porque me qudan en 4 y no en dos y dos como lo intente organizar */
+.productos
+{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 10rem;
+    row-gap: 1rem;    
+    margin-top: 2rem;
+    
+}
+
+.productos .subproductos
+{
+    text-align: center; 
+    justify-self: center;
+    align-self: center;
+    border: solid 2px black;
+   
+}
+.productos .subproductos img
+{
+    margin: .5rem;
+    width: 25rem;
+    height: auto;
+  
+}
+.productos .subproductos img:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+.productos .subproductos p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: underline;
+   
+}
+
+.productos .subproductos p:hover
+{
+    transform: translateY(-2px) scale(.95);
+}
+
+.productos .subproductos .item-1
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.productos .subproductos .item-2
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.productos .subproductos .item-3
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.productos .subproductos .item-4
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.productos .subproductos .item-5
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.productos .subproductos .item-6
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.productos .subproductos .item-7
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.productos .subproductos .item-8
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Lugares */
+
+.lugares h1{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.lugares h2{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.fondo-recomendaciones{
+    background-image: url("/img/lugares.png");
+    background-repeat: repeat;
+    padding: 300px 300px;
+}
+.fondo-recomendaciones p{
+
+    margin-bottom: 200px;
+    background-color: white;
+    display: inline-block; /* box modeling */
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    border: double 2px black;
+}
+/* Artículos */
+
+.articulos-alimentacion h1{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+   
+   
+}
+
+/* recetas */
+/* Me gustaria que el border no sea todo el ancho
+sino que se adapte a la receta */
+.receta
+{
+   /*  display: grid;
+    justify-self: center;
+    align-self: center; 
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    column-gap: 1rem;
+    row-gap: .5rem;
+    grid-template-areas: 
+    "receta-foto receta-foto receta-foto receta-foto"
+    "receta-texto receta-texto receta-texto receta-texto"
+    "receta-ing receta-ing receta-ing receta-ing"
+    "receta-procedimiento receta-procedimiento receta-procedimiento receta-procedimiento"
+    ;  */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto;
+    border: solid 2px black;
+   
+}
+
+.receta .receta-foto
+{
+    grid-area: receta-foto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  
+}
+
+.receta .receta-foto h2
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.receta .receta-foto img
+{
+    width: 80%;
+    height: auto;
+}
+
+.receta .receta-texto
+{
+    width: 80%;
+    grid-area: receta-texto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 3rem;
+}
+
+.receta .receta-texto p
+{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+}
+
+/*Me siguen quedando abajo
+ Los ingredientes */
+ /* Cuando voy a pan arabe queda mas espacio aun
+ y ademas la tilde no la toma bien de árabe */
+/* LA RECETA DE SALSA BLANCA NO QUEDA AFECTADA, Y DE HECHO NO TIENE 
+LOS ESPACIOS ENORMES QUE TIENEN LAS OTRAS RECETAS
+ */
+ .receta .receta-ing
+{
+    /* margin: 0 auto; */
+    grid-area: receta-ing;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+} 
+
+.receta .receta-ing h3
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+    
+}
+
+.receta .receta-ing p
+{
+    
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2;
+    
+}
+
+.receta .receta-procedimiento
+{
+    width: 50%;
+    grid-area: receta-procedimiento;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-bottom: 3rem;
+}
+
+.receta .receta-procedimiento h3
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1rem;
+    
+}
+
+.receta .receta-procedimiento p
+{
+    
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2;
+   
+}
+
+
+/* articulos */
+
+.artVeganismo-Grid
+{
+    display: grid; 
+    justify-self: center;
+    align-self: center; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr) ;
+    column-gap: 10rem;
+    row-gap: 1rem; 
+    grid-template-areas: 
+    "artVeganismo artVeganismo artVeganismo artVeganismo"   
+    ;  
+   
+
+}
+
+.artVeganismo
+{
+    grid-area: artVeganismo;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border: solid 2px black;
+    padding: 2rem;
+}
+
+.artVeganismo .artVeganismo-foto h2
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.artVeganismo .artVeganismo-foto img
+{
+    margin: .5rem;
+    width: 25rem;
+    height: auto;
+    
+}
+
+
+.artVeganismo .artVeganismo-text p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    /* margin-bottom: 3rem; */
+
+}
+.artVeganismo img:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+
+
+/* art-veganismo */
+
+.artVegan
+{
+    display: grid;
+    justify-self: center;
+    align-self: center; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-areas: 
+    "artVegan-foto artVegan-foto artVegan-foto artVegan-foto "
+    "artVegan-text artVegan-text artVegan-text artVegan-text"
+    
+   
+    ;  
+}
+
+.artVegan .artVegan-foto
+{
+    grid-area: salsaB-foto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  
+}
+
+.artVegan .artVegan-foto h2
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.artVegan .artVegan-foto img
+{
+    width: 100%;
+    height: auto;
+}
+
+.artVegan .artVegan-text
+{
+    grid-area: tortaM-text;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 3rem;
+ 
+    
+}
+
+.artVegan .artVegan-text p
+{
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+}
+
+/* lugares */
+
+.artLugares-grid
+{
+    display: grid; 
+    justify-self: center;
+    align-self: center; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+    column-gap: 10rem;
+    row-gap: 1rem; 
+    grid-template-areas: 
+    "artLugares-Rio artLugares-Rio artLugares-Rio artLugares-Rio"
+    "artLugares-BA artLugares-BA artLugares-BA artLugares-BA"
+    "artLugares-SP artLugares-SP artLugares-SP artLugares-SP"   
+    ;         
+
+}
+
+.artLugares-Rio
+{
+    grid-area: artLugares-Rio;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border: solid 2px black;
+    padding: 2rem;
+}
+
+.artLugares-Rio .artLugares-Rio-foto h3
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.artLugares-Rio .artLugares-Rio-foto img
+{
+    margin: .5rem;
+    width: 25rem;
+    height: auto;
+    
+}
+
+.artLugares-Rio .artLugares-Rio-text p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    /* margin-bottom: 3rem; */
+
+}
+.artLugares-Rio img:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+.artLugares-BA
+{
+    grid-area: artLugares-BA;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border: solid 2px black;
+    padding: 2rem;
+    
+}
+
+.artLugares-BA .artLugares-BA-foto h3
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.artLugares-BA .artLugares-BA-foto img
+{
+    margin: .5rem;
+    width: 25rem;
+    height: auto;
+    
+}
+
+
+.artLugares-BA .artLugares-BA-text p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    /* margin-bottom: 3rem; */
+
+}
+.artLugares-BA img:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+.artLugares-SP
+{
+    grid-area: artLugares-SP;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    border: solid 2px black;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.artLugares-SP .artLugares-SP-foto h3
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.artLugares-SP .artLugares-SP-foto img
+{
+    margin: .5rem;
+    width: 25rem;
+    height: auto;
+    
+}
+
+
+.artLugares-SP .artLugares-SP-text p
+{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    /* margin-bottom: 3rem; */
+
+}
+.artLugares-SP img:hover
+{
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Sobre Mí */
+
+
+.sobreMi-grid
+{
+    display: grid; 
+    justify-self: center;
+    align-self: center; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr) ;
+    column-gap: 10rem;
+    row-gap: 1rem; 
+    grid-template-areas: 
+    "imagen-contacto imagen-contacto imagen-contacto imagen-contacto"
+    "sobremi-texto sobremi-texto sobremi-texto sobremi-texto"
+    "formulario-contacto formulario-contacto formulario-contacto formulario-contacto"  
+    ;  
+
+}
+.sobreMi-grid .imagen-contacto
+{
+
+    grid-area: imagen-contacto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5rem;
+  
+}
+
+.sobreMi-grid .imagen-contacto
+{
+    width: 100%;
+    height: auto;
+}
+.sobreMi-grid .sobremi-texto
+{
+    grid-area: sobremi-texto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+ 
+}
+.sobreMi-grid .sobremi-texto p
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.sobreMi-grid .formulario-contacto
+{
+    grid-area: formulario-contacto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 3rem;
+    
+}
+
+.sobreMi-grid .formulario-contacto .formulario
+{
+    text-align: center;
+    padding: 2rem;
+    display: inline;
+
+}
