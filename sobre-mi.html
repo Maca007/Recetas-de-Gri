@@ -64,69 +64,109 @@
         </nav>
         
     </header>
-    <section class="sobreMi-grid">
+    <main class="sobreMi-flexbox">
+    <section class="sobreMi">
     <div class="imagen-contacto">
         <img src="img/cocinando.png" alt="Cocinando">
     </div>
 
     <div class="sobremi-texto">
-        <p>Me encanta cocinar y aprender recetas nuevas, ricas y saludables.</p>
-        <p>Si te quieres comunicar conmigo, porfavor rellena el formulario de contacto y en breve me pondré en contacto contigo</p>
+     <p>Mi nombre es Griselda, hace más de 25 años me hice vegetariana y con los años vegana.</p> 
+     <p>Cuando quede embarazada💕 de mi hijo Benicio, comence a informarme sobre los alimentos y sus propiedades nutricionales, en ese momento era vegetariana, también comence a probar recetas nuevas, porque queria que mi hijo coma rico y saludable. 
+    </p> 
+      <p>Cuando Benicio cumplió 2 años, comenzamos la transición al veganismo, y la cocina vegana se trasformo en mi pasión, a través de mis recetas, comparto mi experiencia Vegana y Saludable, para que más personas se animen a cocinar de una forma sencilla, platos ricos y saludables, sin productos de origen animal, por los animales, por el planeta y por cada uno de nosotros. Las recetas que comparto son las que preparo en casa y las que más le gustan a Beni con 11 años.
+      </p> 
+      <p> Si tienes alguna duda, no dejes de consultarme, te responderé con mucho gusto.
+      </p>
+      <p>
+           Te invito a ver mis videos y si te gustan, a suscribirte a mi canal, es gratis.
+      </p>
     </div>
     
-    
-    <div class="formulario-contacto">
-    <form action="enviar.php" method="GET" >
-
-        <fieldset class="formulario">
-            <legend> <strong> CONTACTO </strong></legend>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" required>
-            <hr>
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-            <hr>
-            <select name="asunto" id="asunto">Asunto
-                <option value="cons">Consultas</option>
-                <option value="mar">Trabajar con una marca</option>
-            </select>
-            <hr>
-            <label for="mensaje">Mensaje</label>
-
-            <div style="margin-bottom: 10px;"></div>
-            
-            <textarea name="textarea" rows="10" cols="50" id="mensaje" required>Escribe aquí...</textarea>
-
-            <hr>
-            <input type="checkbox" name="" id="">
-            Por favor, confirme que está de acuerdo con que almacenemos sus datos.
-            <hr>
-
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar">
-
-
-        </fieldset> 
-        
-        
-    
-    </form>
+    <div class="formulario">      
+        <h3>Formulario de contacto</h3>
+          <p>Escríbeme y en breve me pondré en contacto contigo.</p>
+  
+  
+            <form action="submeter-formulario.php" method="post">       
+  
+              
+                  <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                      <span class="obligatorio">*</span>
+                    </label>
+                      <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                  </p>
+                
+                  <p>
+                    <label for="email" class="colocar_email">Email
+                      <span class="obligatorio">*</span>
+                    </label>
+                      <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu email">
+                  </p>
+              
+                  <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                      <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                  </p>       
+                
+                  <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                      <span class="obligatorio">*</span>
+                    </label>
+                      <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                  </p>    
+                
+                  <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                      <span class="obligatorio">*</span>
+                    </label>                     
+                                      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                  </p>                    
+                
+                  <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+  
+                  <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                  </p>          
+              
+            </form>
+      </div>  
     </div>
+  
+    
     </section>
-    <footer class="footer">
-
-        <div class="redes">
+  </main>
+    <footer class="container-footer">
+        
+        <div class="columna-1">
+            <h3>Clásicas Veganas</h3>
             <ul>
-    
+                <li> <a href="HamburguesaLenteja.html"> HAMBURGUESA DE LENTEJAS</a> </li>
+                <li> <a href="PancakeAvena.html">PANCAKES DE AVENA Y BANANA</a> </li>
+                <li> <a href="TortaManzana.html">TORTA DE MANZANA</a> </li>
+                <li> <a href="PanArabe.html">PAN ÁRABE</a> </li>
+            </ul>
+        </div>
+        <div class="columna-2">
+            <ul>
+            <li><a href="sobre-mi.html">CONTACTO</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="recetas.html">MÁS RECETAS</a></li>
+            </ul>
+        </div>
+        <div class="columna-3">
+            <ul>
+  
                 <li><a href="https://www.youtube.com/channel/UCU1MvbU90zUl16HPk5J4u0w" class="youtube" target="_blank" rel="noopener noreferrer">
-                <img src="img/youtube.png" alt="Youtube"></a>
+                <img src="img/youtube.png" alt="Youtube">YOUTUBE</a>
                 </li> 
                 <li><a href="https://www.facebook.com/pg/recetasdegri/posts/" class="facebook" target="_blank" rel="noopener noreferrer">
-                <img src="img/facebook.png" alt="Facebook"></a>
+                <img src="img/facebook.png" alt="Facebook">FACEBOOK</a>
                 </li> 
                 <li><a href="https://www.instagram.com/recetasdegri/?hl=es" class="instagram" target="_blank" rel="noopener noreferrer">
-                <img src="img/instagram.png" alt="Instagram" ></a>
+                <img src="img/instagram.png" alt="Instagram" >INSTAGRAM</a>
                 </li>
             </ul>
     
@@ -136,18 +176,9 @@
             -->
         </div>
     
-        
-    
-        <div class="footer-texto">
-    
-                <h1>Recetas de Gri</h1>
-                <h2>-VEGANAS Y SALUDABLES-</h2>
-                    
-        </div> 
-    
+   
        
-        
-    </footer>
+  </footer>
            
     
     
