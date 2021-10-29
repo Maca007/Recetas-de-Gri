@@ -8,36 +8,14 @@
 .html{
     font-size: 62.5%;
 }
-
-/* .container-index
-{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 5rem;
-    column-gap: 3rem;
-    grid-template-areas: 
-    "contenedor-nav contenedor-nav contenedor-nav contenedor-nav"
-    "container-main container-main container-main container-main"
-    "container-footer container-footer container-footer container-footer"
-    ;
-    
-}
- */
-.contenedor-nav
-{
-    grid-area: contenedor-nav;
+/* INDEX */
+.contenedor-nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;     
 }
-
-
-/* se pone de color azul cuando me acerco */
-.header-text a
-{
+.header-text a{
     text-decoration: none;
     color: black;
     
@@ -45,82 +23,59 @@
 .header-text a:hover{
     color: black;
 }
-.contenedor-nav .header-text h1 
-{
+.contenedor-nav .header-text h1{
     text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;  
 }
-
-
-.contenedor-nav .header-text h2
-{
+.contenedor-nav .header-text h2{
     text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding-bottom: 1rem;    
 }
-
-.header-nav
-{
+.header-nav{
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items:center;
 }
-
-.header-nav .nav-menu ul
-{
+.header-nav .nav-menu ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 1rem;
 }
-
-.header-nav .nav-menu ul li a
-{
+.header-nav .nav-menu ul li a{
     text-decoration: none;
     color: black;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.2rem;
     
 }
-
-.header-nav .nav-menu ul li
-{
+.header-nav .nav-menu ul li{
     list-style: none;
     padding: 0 .8rem;
 }
-
-
-.header-nav .nav-menu ul li:hover
-{
+.header-nav .nav-menu ul li:hover{
     transform: translateY(-5px) scale(1.05);
     
 }
-
-.header-nav .redes-nav ul li
-{
+.header-nav .redes-nav ul li{
     display: inline-block;
     margin: 0 .3rem;     
 }
-
-.header-nav .redes-nav ul li:hover
-{
+.header-nav .redes-nav ul li:hover{
     transform: translateY(-5px) scale(1.05);
 }
-
-.header-nav .redes-nav img
-{
+.header-nav .redes-nav img{
     width: 3rem;
     height: auto;
 }
-
-.container-main
-{
+.container-main{
     grid-area: container-main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -129,25 +84,20 @@
     column-gap: 3rem;
     grid-template-areas: 
     "carouselB carouselB carouselB carouselB"
-    "video-tendencia video-tendencia video-tendencia video-tendencia"
-    
+    "video-tendencia video-tendencia video-tendencia video-tendencia"  
     ;
 }
-
-.container-main .carouselB
-{
+.container-main .carouselB{
     /* EL CARROUSEL NO ME TOMA LAS COLUMNAS PARA QUE QUEDE CENTRADO  */
     grid-area: carouselB;
     grid-column: 2/4;
     grid-row: 1/2;
     
 }
-.container-main .carouselB
-{
+.container-main .carouselB{
     width: 45rem;
     height: auto;
 }
-
 .container-main .carousel-texto p{
     margin-top: 3rem;
     font-family: 'Noto Sans TC', sans-serif;
@@ -155,50 +105,39 @@
     line-height: 1.6;
     text-align: center; 
 }
-
-.container-main .video-tendencia
-{
+.container-main .video-tendencia{
     grid-area: video-tendencia;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.container-main .video-tendencia
-{
+.container-main .video-tendencia{
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-self: center;   
 }
-
-.container-main .texto-tendencia
-{
+.container-main .texto-tendencia{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
     align-self: center; 
 }
-.container-main .texto-tendencia .video-texto
-{
+.container-main .texto-tendencia .video-texto{
     justify-items: center;
     align-items: center; 
     
 }
-
-.container-main .texto-tendencia  p
-{
+.container-main .texto-tendencia  p{
     margin-top: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: center;  
-    
+    text-align:left;
+    margin-bottom: .3rem;    
 }
-
-.container-main .texto-tendencia  h3
-{
+.container-main .texto-tendencia  h3{
     margin-top: 1rem;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.6rem;
@@ -207,23 +146,18 @@
     text-align: center;
     
 }
-
-.container-main .video-texto p
-{
+.container-main .video-texto p{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;   
 }
-
-.container-main .video-tendencia .video
-{   
+.container-main .video-tendencia .video{   
     padding: 4rem;  
     
 }
 .container-footer
 /* ME GUSTARIA QUE TUVIERA MENOS ESPACIO ENTRE COLUMNAS, PERO NO SE COMO HACER */
-{
-   
+{  
     grid-area: container-footer;
     width: 100%;
     height: auto;
@@ -239,14 +173,11 @@
 .container-footer ul{
     list-style: none;
 }
-
-
 .container-footer .columna-1{
     justify-items: center;
     align-items: center;
 }
-.container-footer .columna-1 h3
-{
+.container-footer .columna-1 h3{
     
     margin-top: 2rem;
     text-align: center;
@@ -269,7 +200,6 @@
     align-items: center;
     
 }
-
 .container-footer .columna-2 ul li a{
     
     color: #000;
@@ -285,8 +215,7 @@
     align-items: center;
     
 }
-.container-footer .columna-3 ul li a{
-   /* QUE LOS LOGOS DE FACEBOOK Y EL TEXTO ESTE CENTRADO SOLO ME LO TOMA EN EL INDEX */ 
+.container-footer .columna-3 ul li a{ 
     color: #000;
     text-decoration: none;
     text-align: center;
@@ -300,12 +229,9 @@
     vertical-align: middle;
 }
 
-
 /* Ahora aplicaré estilos a recetas */
 
-/* no se porque me qudan en 4 y no en dos y dos como lo intente organizar */
-.subproductos
-{ 
+.subproductos{ 
     display: grid; 
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -329,104 +255,56 @@
     color: black;
     text-decoration: underline;  
 }
-
 .subproductos p:hover{
     transform: translateY(-2px) scale(.95);
 }
-
 .subproductos .item-1{
-    /* DE LA UNICA FORMA QUE QUEDEN MAS O MENOS CENTRADA */
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
-.subproductos .item-2
-{
+.subproductos .item-2{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.subproductos .item-3
-{
+.subproductos .item-3{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.subproductos .item-4
-{
+.subproductos .item-4{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.subproductos .item-5
-{
+.subproductos .item-5{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.subproductos .item-6
-{
+.subproductos .item-6{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.subproductos .item-7
-{
+.subproductos .item-7{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.subproductos .item-8
-{
+.subproductos .item-8{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
-}
-
-/* Lugares */
-
-.lugares h1{
-
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 100px;
-}
-
-.lugares h2{
-
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-.fondo-recomendaciones{
-    background-image: url("/img/lugares.png");
-    background-repeat: repeat;
-    padding: 300px 300px;
-}
-.fondo-recomendaciones p{
-
-    margin-bottom: 200px;
-    background-color: white;
-    display: inline-block; /* box modeling */
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.6;
-    border: double 2px black;
 }
 /* Artículos */
 
@@ -604,39 +482,29 @@
 
 
 
-/* art-veganismo */
+/* El articulo que habla sobre los comienzos del veganismo */
 
-.artVegan
+.veganismo
 {
-    display: grid;
-    justify-self: center;
-    align-self: center; 
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    column-gap: 1rem;
-    row-gap: 2rem;
-    grid-template-areas: 
-    "artVegan-foto artVegan-foto artVegan-foto artVegan-foto "
-    "artVegan-text artVegan-text artVegan-text artVegan-text"
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
     
-   
-    ;  
 }
 
-.artVegan .artVegan-foto
+.veganismo .artVegan-foto
 {
-    grid-area: salsaB-foto;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
     text-align: center;
     justify-self: center;
     align-self: center;
   
 }
 
-.artVegan .artVegan-foto h2
+.veganismo .artVegan-foto h2
 {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -644,34 +512,31 @@
     font-weight: 400;
     font-size: 2rem;
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
-.artVegan .artVegan-foto img
+.veganismo .artVegan-foto img
 {
-    width: 100%;
+    width: 35rem;
     height: auto;
 }
 
-.artVegan .artVegan-text
+.veganismo .artVegan-text
 {
-    grid-area: tortaM-text;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    margin-top: 3rem;
+   width: 100%;
+   margin-top: 3rem;
  
     
 }
 
-.artVegan .artVegan-text p
+.veganismo .artVegan-text p
 {
 
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 2;
-    text-align: center;
 }
 
 /* lugares */
@@ -686,15 +551,27 @@
     column-gap: 10rem;
     row-gap: 1rem; 
     grid-template-areas: 
+    "lugares lugares lugares lugares"
     "artLugares-Rio artLugares-Rio artLugares-Rio artLugares-Rio"
     "artLugares-BA artLugares-BA artLugares-BA artLugares-BA"
     "artLugares-SP artLugares-SP artLugares-SP artLugares-SP"   
     ;         
 
 }
+.lugares{
+    grid-area: lugares;
+    grid-column: 2/4;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    margin-top: 3rem;
+
+}
 
 .artLugares-Rio
 {
+    margin-top: 15rem;
     grid-area: artLugares-Rio;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -824,34 +701,26 @@
 
 /* Sobre Mí */
 .sobreMi-flexbox{
-  /*   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
- */
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  width: 100%;
 }
-.sobreMi
-{
+.sobreMi{
     justify-content: center;
     align-content: center; 
 
 
 }
-.sobreMi .imagen-contacto
-{
+.sobreMi .imagen-contacto{
     text-align: center;
     justify-self: center;
     align-self: center;
     margin-top: 5rem;
   
 }
-.sobreMi .imagen-contacto img
-{
+.sobreMi .imagen-contacto img{
     width: 35rem;
     height: auto;
 }
@@ -865,10 +734,6 @@
     text-align: center;
     justify-self: center;
     align-self: center;
-    /* justify-content: center;
-    align-content: center; */
-    
- 
 }
 .sobreMi .sobremi-texto p
 {
